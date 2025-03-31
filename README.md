@@ -89,3 +89,32 @@ To run the EDA scripts, execute the following commands:
    ```bash
    code .
    python main.py
+
+## Example Output
+
+### 1. **K-means Clustering (Segmentation)**
+
+The K-means algorithm segmented customers into 6 distinct groups based on their transaction behaviors. We used the **Silhouette Score** to determine the optimal number of clusters. Below is the output of the K-means clustering result:
+
+```python
+# K-means clustering and silhouette score
+from sklearn.cluster import KMeans
+from sklearn.metrics import silhouette_score
+
+# Assuming 'X' is your preprocessed feature matrix
+kmeans = KMeans(n_clusters=6, random_state=42)
+kmeans.fit(X)
+
+# Evaluate clustering using silhouette score
+sil_score = silhouette_score(X, kmeans.labels_)
+print(f"Silhouette Score for 6 clusters: {sil_score}")
+
+SVM Precision: 0.85
+Decision Tree Precision: 0.88
+Gradient Boosting Precision: 0.90
+
+Best Model: Gradient Boosting with Precision: 0.90
+
+## Conclusion
+Based on the model comparison, the Gradient Boosting Classifier achieved the highest precision of 90% and is the selected model for predicting customer behavior.
+
