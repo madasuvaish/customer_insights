@@ -70,3 +70,22 @@ The project demonstrates the following results:
 1. Clone the repository to your local machine:
    ```bash
    git clone https://github.com/yourusername/customer-insights.git
+2. **Install Dependencies: Install the required libraries listed in the requirements.txt file using the following command**
+   ```bash
+   pip install -r requirements.txt
+3. **Run the Scripts: Once the dependencies are installed, you can start running the scripts:**
+
+- **For Exploratory Data Analysis (EDA):**
+
+To run the EDA scripts, execute the following commands:
+
+1. Run the EDA script:
+   ```bash
+   python eda.py
+2. Run the Lookalike Model script:
+   ```bash
+   python lookalikemodel.py
+3. Run the Clustering script in Command Prompt:
+   ```bash
+   code .
+   python main.py
