@@ -65,6 +65,18 @@ The project demonstrates the following results:
 - Clear customer segments using K-means clustering.
 - An evaluation of several classification models with precision comparison, leading to a selection of the best-performing model for predicting customer behavior.
 
+## Conclusion
+K-means Clustering
+The K-means clustering algorithm successfully segmented customers into 6 distinct clusters based on their transaction behaviors.
+
+The Silhouette Score of 0.46 indicates that the clustering solution is relatively well-separated, providing valuable customer segments for further analysis.
+
+Classification Model Comparison
+Gradient Boosting Classifier achieved the highest precision of 90% among all tested models, including SVM and Decision Tree.
+
+Based on precision scores, Gradient Boosting was selected as the best model for predicting customer behavior.
+
+
 ## How to Run the Code
 
 1. Clone the repository to your local machine:
@@ -109,20 +121,10 @@ kmeans.fit(X)
 sil_score = silhouette_score(X, kmeans.labels_)
 print(f"Silhouette Score for 6 clusters: {sil_score}")
 
-**SVM Precision: 0.85
+SVM Precision: 0.85
 Decision Tree Precision: 0.88
 Gradient Boosting Precision: 0.90
 
 Best Model: Gradient Boosting with Precision: 0.90**
 
 
-### Conclusion
-K-means Clustering
-The K-means clustering algorithm successfully segmented customers into 6 distinct clusters based on their transaction behaviors.
-
-The Silhouette Score of 0.46 indicates that the clustering solution is relatively well-separated, providing valuable customer segments for further analysis.
-
-Classification Model Comparison
-Gradient Boosting Classifier achieved the highest precision of 90% among all tested models, including SVM and Decision Tree.
-
-Based on precision scores, Gradient Boosting was selected as the best model for predicting customer behavior.
