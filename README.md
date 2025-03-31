@@ -115,6 +115,8 @@ Gradient Boosting Precision: 0.90
 
 Best Model: Gradient Boosting with Precision: 0.90
 
+
+
 ## Conclusion
 Based on the model comparison, the Gradient Boosting Classifier achieved the highest precision of 90% and is the selected model for predicting customer behavior.
 
